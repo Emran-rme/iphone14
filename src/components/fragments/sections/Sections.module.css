@@ -1,0 +1,189 @@
+.logoSection {
+  height: calc(100vh - 52px - 44px);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  z-index: 1;
+  padding-bottom: 5px;
+}
+.textSection {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    #2ca2b4,
+    #5598de 24%,
+    #7f87ff 45%,
+    #f65aad 76%,
+    #ec3d43
+  );
+  will-change: transform;
+  padding-top: 0.5px;
+  overflow: hidden;
+  background-color: #2ca2b4 0%;
+  padding-bottom: 0.03em;
+  margin-bottom: -0.03em;
+}
+
+.bigDiv {
+  perspective: 1600px;
+  perspective-origin: 50% 650px;
+}
+.bigText {
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.023em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  transition: all 600ms ease;
+  transform-style: preserve-3d;
+  transform: rotateY(-40deg);
+  margin-right: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 662px;
+  display: flex;
+}
+.specsContainer {
+  perspective-origin: 50% 690px;
+}
+
+.specsContainer {
+  perspective: 1600px;
+  perspective-origin: 50% 520px;
+}
+.productName {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  transform: rotateY(-45deg);
+}
+.productSize {
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  transform: rotateY(-45deg);
+}
+
+.specsContainer {
+  perspective: 1600px;
+  perspective-origin: 50% 520px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .container {
+    padding-top: 36px;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .container {
+    --device-container-height: 500px;
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .container2 {
+    width: 100%;
+    height: 500px;
+  }
+  .container2 {
+    display: flex;
+    height: 850px;
+  }
+}
+.iphone {
+  width: 590px;
+  height: 980px;
+  display: block;
+}
+
+.largeOffset1 {
+  margin-left: 8.3333333333%;
+}
+.largeOffset2 {
+  margin-left: 16.6666666667%;
+}
+.largeOffset4 {
+  margin-left: 33.3333333333%;
+}
+.large12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.large10 {
+  flex-basis: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+.large9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+.large8 {
+  flex-basis: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+.large7 {
+  flex-basis: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+.large6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.large5 {
+  flex-basis: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+.large3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+.large2 {
+  flex-basis: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.typography_site_body {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.lock_screen_copy {
+  margin-top: 38px;
+  margin-bottom: 243px;
+}
+.typography_site_body,
+.typography_site_body_reduced {
+  color: #6e6e73;
+}
