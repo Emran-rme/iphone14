@@ -96,7 +96,9 @@ html.enhance-deep-dive,
 html.enhance-deep-dive #main {
   transition: transform var(--deep-dive-transition-duration);
 }
-
+body {
+  min-width: 320px;
+}
 details,
 main,
 summary {
@@ -945,11 +947,40 @@ a.ac-gf-block::after {
 .ac-gf-footer {
   padding: 17px 0 21px;
 }
+#ac-globalfooter {
+  font-weight: normal;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+#ac-globalfooter {
+  --footer-background: #f5f5f7;
+  --footer-border-color: #d2d2d7;
+  --footer-text-color: #6e6e73;
+  --footer-link-color: #424245;
+  --footer-directory-title-color: #1d1d1f;
+  --footer-directory-title-color-hover: #000;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: var(--footer-background);
+  color: var(--footer-text-color);
+  min-width: 1024px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
 @media only screen and (max-width: 1044px) {
   #ac-globalfooter {
     min-width: 320px;
   }
 }
+
 @media only screen and (max-width: 833px) {
   #ac-globalfooter .ac-gf-directory-column-section-title:after {
     content: "+";
@@ -1071,6 +1102,20 @@ a.ac-gf-block::after {
     float: none;
   }
 }
+#ac-globalfooter .ac-gf-content {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+@media only screen and (max-width: 833px) {
+  #ac-globalfooter .ac-gf-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /*=============second section===============*/
 
 .gallery {
