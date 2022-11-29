@@ -366,6 +366,7 @@ html.enhance-hero .first_section .manifesto-section-1 .manifesto-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform linear 0.15s;
 }
 html.enhance-hero
   .first_section
@@ -455,10 +456,12 @@ html.enhance-hero .first_section .manifesto-bottom .safety-container {
   max-width: 900px;
   width: 100%;
   transform-style: preserve-3d;
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 1068px) {
   html.enhance-hero .first_section .manifesto-bottom .safety-container {
     max-width: 780px;
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero
@@ -489,15 +492,18 @@ html.enhance-hero .first_section .manifesto-bottom .camera-container {
   justify-content: center;
   max-width: 980px;
   transform-style: preserve-3d;
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 1068px) {
   html.enhance-hero .first_section .manifesto-bottom .camera-container {
     max-width: 692px;
+    transition: transform linear 0.15s;
   }
 }
 @media only screen and (max-width: 734px) {
   html.enhance-hero .first_section .manifesto-bottom .camera-container {
     max-width: 87.5%;
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero
@@ -735,10 +741,12 @@ html.enhance-hero .first_section .manifesto-bottom .size-container {
 }
 .first_section .hero-display-section .iphone-14-image-container {
   transform: translateX(-84px);
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 1068px) {
   .first_section .hero-display-section .iphone-14-image-container {
     transform: translateX(-54px);
+    transition: transform linear 0.15s;
   }
 }
 @media only screen and (max-width: 734px) {
@@ -747,6 +755,7 @@ html.enhance-hero .first_section .manifesto-bottom .size-container {
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    transition: transform linear 0.15s;
   }
 }
 
@@ -884,15 +893,18 @@ html.enhance-hero .first_section .manifesto-bottom .size-container {
 }
 .first_section .hero-display-section .iphone-14-plus-image-container {
   transform: translateX(124px);
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 1068px) {
   .first_section .hero-display-section .iphone-14-plus-image-container {
     transform: translateX(100px);
+    transition: transform linear 0.15s;
   }
 }
 @media only screen and (max-width: 734px) {
   .first_section .hero-display-section .iphone-14-plus-image-container {
     transform: translateX(0px);
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero .first_section .hero-display-section {
@@ -991,6 +1003,7 @@ html.enhance-hero
   .big-container {
   perspective: 1600px;
   perspective-origin: 50% 600px;
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 1068px) {
   html.enhance-hero
@@ -999,6 +1012,7 @@ html.enhance-hero
     .big-headline-container
     .big-container {
     perspective-origin: 50% 650px;
+    transition: transform linear 0.15s;
   }
 }
 @media only screen and (max-width: 734px) {
@@ -1008,6 +1022,7 @@ html.enhance-hero
     .big-headline-container
     .big-container {
     perspective-origin: 50% 600px;
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero
@@ -1047,6 +1062,7 @@ html.enhance-hero
   .bigger-container {
   perspective: 1600px;
   perspective-origin: 50% 690px;
+  transition: transform linear 0.15s;
 }
 @media only screen and (min-width: 735px) and (max-width: 1068px) {
   html.enhance-hero
@@ -1055,6 +1071,7 @@ html.enhance-hero
     .bigger-headline-container
     .bigger-container {
     white-space: nowrap;
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero
@@ -1099,6 +1116,7 @@ html.enhance-hero
   display: flex;
   align-items: flex-end;
   position: absolute;
+  transition: transform linear 0.15s;
 }
 html.enhance-hero .first_section .hero-display-section .specs-container {
   perspective: 1600px;
@@ -1547,10 +1565,12 @@ html.enhance-hero .first_section .hardware-fan-first-section .subheadline {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   --subhead-scale: 2.5;
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 734px) {
   html.enhance-hero .first_section .hardware-fan-first-section .subheadline {
     --subhead-scale: 2;
+    transition: transform linear 0.15s;
   }
 }
 html.enhance-hero
@@ -1679,6 +1699,7 @@ html.enhance-hero
   .image-hardware-enhanced {
   display: block;
   position: relative;
+  transition: transform linear 0.15s;
 }
 @media only screen and (max-width: 734px) {
   html.enhance-hero
@@ -1691,6 +1712,7 @@ html.enhance-hero
     left: unset;
     right: unset;
     transform-origin: 50% var(--starburst-radius);
+    transition: transform linear 0.15s;
   }
   html.enhance-hero
     .first_section
@@ -8375,6 +8397,7 @@ html.touch .section-design .gallery .colornav-item .colornav-anchor {
   border-radius: 18px;
   display: flex;
   overflow: hidden;
+  
 }
 .section-design .gallery .gallery-tile .asset-list-xdr,
 .section-design .gallery .gallery-tile .asset-list-xdr .picture {
@@ -8545,6 +8568,7 @@ html.touch .section-design .gallery .colornav-item .colornav-anchor {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  
 }
 .section-design .gallery .gallery-tile-bento-1 .asset-list {
   flex-grow: 1;
@@ -18131,7 +18155,7 @@ html.enhance-page-xp-parallax .section-display .overview-display-xdr-display {
 .section-sim .icon-sim {
   background-size: 64px 64px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/sim-environment/icon_esim__gbja7wbxffqm_large.png);
+  background-image: url("./../images/icon_esim__gbja7wbxffqm_large.png");
   height: 64px;
   width: 64px;
 }
@@ -18140,21 +18164,21 @@ html.enhance-page-xp-parallax .section-display .overview-display-xdr-display {
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-sim .icon-sim {
-    background-image: url(/v/iphone-14/c/images/overview/sim-environment/icon_esim__gbja7wbxffqm_large_2x.png);
+    background-image: url("./../images/icon_esim__gbja7wbxffqm_large_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
   .section-sim .icon-sim {
     background-size: 45px 45px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/sim-environment/icon_esim__gbja7wbxffqm_small.png);
+    background-image: url("./../images/icon_esim__gbja7wbxffqm_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-sim .icon-sim {
-    background-image: url(/v/iphone-14/c/images/overview/sim-environment/icon_esim__gbja7wbxffqm_small_2x.png);
+    background-image: url("./../images/icon_esim__gbja7wbxffqm_small_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -18548,42 +18572,42 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-starlight {
 html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
   background-size: 377px 499px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_large.jpg);
+  background-image: url("./../images/ar_midnight__fie4ixi5p2um_large.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_large_2x.jpg);
+    background-image: url("./../images/ar_midnight__fie4ixi5p2um_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
   html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
     background-size: 302px 400px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_medium.jpg);
+    background-image: url("./../images/ar_midnight__fie4ixi5p2um_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_medium_2x.jpg);
+    background-image: url("./../images/ar_midnight__fie4ixi5p2um_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
   html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
     background-size: 221px 281px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_small.jpg);
+    background-image: url("./../images/ar_midnight__fie4ixi5p2um_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_midnight__fie4ixi5p2um_small_2x.jpg);
+    background-image: url("./../images/ar_midnight__fie4ixi5p2um_small_2x.jpg");
   }
 }
 .section-ar
@@ -18594,7 +18618,7 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
 .section-ar .ar-quicklook-gallery-image-blue {
   background-size: 377px 499px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_large.jpg);
+  background-image: url("./../images/ar_blue__ck4vy6sj8nyq_large.jpg");
   display: block;
   width: var(--p-width);
   height: var(--p-height);
@@ -18606,35 +18630,35 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-midnight {
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-ar .ar-quicklook-gallery-image-blue {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_large_2x.jpg);
+    background-image: url("./../images/ar_blue__ck4vy6sj8nyq_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
   .section-ar .ar-quicklook-gallery-image-blue {
     background-size: 302px 400px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_medium.jpg);
+    background-image: url("./../images/ar_blue__ck4vy6sj8nyq_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-ar .ar-quicklook-gallery-image-blue {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_medium_2x.jpg);
+    background-image: url("./../images/ar_blue__ck4vy6sj8nyq_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
   .section-ar .ar-quicklook-gallery-image-blue {
     background-size: 221px 281px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_small.jpg);
+    background-image: url("./../images/ar_blue__ck4vy6sj8nyq_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-ar .ar-quicklook-gallery-image-blue {
-    background-image: url(/v/iphone-14/c/images/overview/ar/ar_blue__ck4vy6sj8nyq_small_2x.jpg);
+    background-image: url("./../images/ar_blue__ck4vy6sj8nyq_small_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (max-width: 1068px) {
@@ -18993,7 +19017,7 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
 .section-router .router-tile-accessibility {
   background-size: 482px 442px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_large.png);
+  background-image: url("./../images/tile_accessibility__c1p378uxv54y_large.png");
   background-color: #ecf2fc;
   background-position: bottom;
 }
@@ -19002,35 +19026,35 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-router .router-tile-accessibility {
-    background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_large_2x.png);
+    background-image: url("./../images/tile_accessibility__c1p378uxv54y_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
   .section-router .router-tile-accessibility {
     background-size: 342px 346px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_medium.png);
+    background-image: url("./../images/tile_accessibility__c1p378uxv54y_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-router .router-tile-accessibility {
-    background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_medium_2x.png);
+    background-image: url("./../images/tile_accessibility__c1p378uxv54y_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
   .section-router .router-tile-accessibility {
     background-size: 327px 442px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_small.png);
+    background-image: url("./../images/tile_accessibility__c1p378uxv54y_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-router .router-tile-accessibility {
-    background-image: url(/v/iphone-14/c/images/overview/router/tile_accessibility__c1p378uxv54y_small_2x.png);
+    background-image: url("./../images/tile_accessibility__c1p378uxv54y_small_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -19851,7 +19875,7 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
   height: 814px;
   background-size: 1412px 814px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_large.jpg);
+  background-image: url("./../images/guided_tour__cgyfc8hmtjyq_large.jpg");
   background-position: bottom;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
@@ -19859,7 +19883,7 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-guided-tour .tile-guided-tour .tour-guide {
-    background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_large_2x.jpg);
+    background-image: url("./../images/guided_tour__cgyfc8hmtjyq_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -19868,14 +19892,14 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
     height: 630px;
     background-size: 1048px 630px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_medium.jpg);
+    background-image: url("./../images/guided_tour__cgyfc8hmtjyq_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-guided-tour .tile-guided-tour .tour-guide {
-    background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_medium_2x.jpg);
+    background-image: url("./../images/guided_tour__cgyfc8hmtjyq_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -19884,14 +19908,14 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
     height: 412px;
     background-size: 680px 412px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_small.jpg);
+    background-image: url("./../images/guided_tour__cgyfc8hmtjyq_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-guided-tour .tile-guided-tour .tour-guide {
-    background-image: url(/v/iphone-14/c/images/overview/guided-tour/guided_tour__cgyfc8hmtjyq_small_2x.jpg);
+    background-image: url("./../images/guided_tour__cgyfc8hmtjyq_small_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20402,14 +20426,14 @@ html.text-zoom .section-compare .compare-table {
   height: 257px;
   background-size: 190px 257px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_large.jpg);
+  background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_large.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-compare-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_large_2x.jpg);
+    background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20418,14 +20442,14 @@ html.text-zoom .section-compare .compare-table {
     height: 204px;
     background-size: 151px 204px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_medium.jpg);
+    background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_medium_2x.jpg);
+    background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20434,14 +20458,14 @@ html.text-zoom .section-compare .compare-table {
     height: 165px;
     background-size: 123px 165px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_small.jpg);
+    background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14_pro__f4vf691cwqmy_small_2x.jpg);
+    background-image: url("./../images/compare_iphone_14_pro__f4vf691cwqmy_small_2x.jpg");
   }
 }
 .section-compare .image-compare-iphone-14 {
@@ -20449,14 +20473,14 @@ html.text-zoom .section-compare .compare-table {
   height: 257px;
   background-size: 180px 257px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_large.jpg);
+  background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_large.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-compare-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_large_2x.jpg);
+    background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20465,14 +20489,14 @@ html.text-zoom .section-compare .compare-table {
     height: 204px;
     background-size: 143px 204px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_medium.jpg);
+    background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_medium_2x.jpg);
+    background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20481,14 +20505,14 @@ html.text-zoom .section-compare .compare-table {
     height: 165px;
     background-size: 115px 165px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_small.jpg);
+    background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_14__cu80gfp1t2eu_small_2x.jpg);
+    background-image: url("./../images/compare_iphone_14__cu80gfp1t2eu_small_2x.jpg");
   }
 }
 .section-compare .image-compare-iphone-13 {
@@ -20496,14 +20520,14 @@ html.text-zoom .section-compare .compare-table {
   height: 257px;
   background-size: 161px 257px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_large.jpg);
+  background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_large.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-compare-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_large_2x.jpg);
+    background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20512,14 +20536,14 @@ html.text-zoom .section-compare .compare-table {
     height: 204px;
     background-size: 128px 204px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_medium.jpg);
+    background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_medium_2x.jpg);
+    background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20528,14 +20552,14 @@ html.text-zoom .section-compare .compare-table {
     height: 165px;
     background-size: 105px 165px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_small.jpg);
+    background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_13__bkn43yiq20uq_small_2x.jpg);
+    background-image: url("./../images/compare_iphone_13__bkn43yiq20uq_small_2x.jpg");
   }
 }
 .section-compare .image-compare-iphone-se {
@@ -20543,14 +20567,14 @@ html.text-zoom .section-compare .compare-table {
   height: 257px;
   background-size: 151px 257px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_large.jpg);
+  background-image: url("./../images/compare_iphone_se__exgk68srb4k2_large.jpg");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-compare-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_large_2x.jpg);
+    background-image: url("./../images/compare_iphone_se__exgk68srb4k2_large_2x.jpg");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20559,14 +20583,14 @@ html.text-zoom .section-compare .compare-table {
     height: 204px;
     background-size: 119px 204px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_medium.jpg);
+    background-image: url("./../images/compare_iphone_se__exgk68srb4k2_medium.jpg");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_medium_2x.jpg);
+    background-image: url("./../images/compare_iphone_se__exgk68srb4k2_medium_2x.jpg");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20575,14 +20599,14 @@ html.text-zoom .section-compare .compare-table {
     height: 165px;
     background-size: 99px 165px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_small.jpg);
+    background-image: url("./../images/compare_iphone_se__exgk68srb4k2_small.jpg");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-compare-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/compare_iphone_se__exgk68srb4k2_small_2x.jpg);
+    background-image: url("./../images/compare_iphone_se__exgk68srb4k2_small_2x.jpg");
   }
 }
 .section-compare .image-icon-5g {
@@ -20590,14 +20614,14 @@ html.text-zoom .section-compare .compare-table {
   height: 36px;
   background-size: 50px 36px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_5g__cxhswo0ooyuu_large.png);
+  background-image: url("./../images/icon_5g__cxhswo0ooyuu_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-5g {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_5g__cxhswo0ooyuu_large_2x.png);
+    background-image: url("./../images/icon_5g__cxhswo0ooyuu_large_2x.png");
   }
 }
 .section-compare .image-icon-13-camera {
@@ -20605,14 +20629,14 @@ html.text-zoom .section-compare .compare-table {
   height: 36px;
   background-size: 36px 36px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_13_camera__f043xme5rr2i_large.png);
+  background-image: url("./../images/icon_13_camera__f043xme5rr2i_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-13-camera {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_13_camera__f043xme5rr2i_large_2x.png);
+    background-image: url("./../images/icon_13_camera__f043xme5rr2i_large_2x.png");
   }
 }
 .section-compare .image-icon-14-camera {
@@ -20620,14 +20644,14 @@ html.text-zoom .section-compare .compare-table {
   height: 36px;
   background-size: 36px 36px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_14_camera__e85xl2boy6y6_large.png);
+  background-image: url("./../images/icon_14_camera__e85xl2boy6y6_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-14-camera {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_14_camera__e85xl2boy6y6_large_2x.png);
+    background-image: url("./../images/icon_14_camera__e85xl2boy6y6_large_2x.png");
   }
 }
 .section-compare .image-icon-14-pro-camera {
@@ -20635,14 +20659,14 @@ html.text-zoom .section-compare .compare-table {
   height: 36px;
   background-size: 36px 36px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_14_pro_camera__101n1rjidgyq_large.png);
+  background-image: url("./../images/icon_14_pro_camera__101n1rjidgyq_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-14-pro-camera {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_14_pro_camera__101n1rjidgyq_large_2x.png);
+    background-image: url("./../images/icon_14_pro_camera__101n1rjidgyq_large_2x.png");
   }
 }
 .section-compare .image-icon-a15 {
@@ -20650,14 +20674,14 @@ html.text-zoom .section-compare .compare-table {
   height: 38px;
   background-size: 38px 38px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_a15__b793zv37qcj6_large.png);
+  background-image: url("./../images/icon_a15__b793zv37qcj6_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-a15 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_a15__b793zv37qcj6_large_2x.png);
+    background-image: url("./../images/icon_a15__b793zv37qcj6_large_2x.png");
   }
 }
 .section-compare .image-icon-a16 {
@@ -20665,14 +20689,14 @@ html.text-zoom .section-compare .compare-table {
   height: 38px;
   background-size: 38px 38px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_a16__e50snl8kejo2_large.png);
+  background-image: url("./../images/icon_a16__e50snl8kejo2_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-a16 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_a16__e50snl8kejo2_large_2x.png);
+    background-image: url("./../images/icon_a16__e50snl8kejo2_large_2x.png");
   }
 }
 .section-compare .image-icon-battery {
@@ -20680,14 +20704,14 @@ html.text-zoom .section-compare .compare-table {
   height: 22px;
   background-size: 43px 22px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_battery__b88f4bo549n6_large.png);
+  background-image: url("./../images/icon_battery__b88f4bo549n6_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-battery {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_battery__b88f4bo549n6_large_2x.png);
+    background-image: url("./../images/icon_battery__b88f4bo549n6_large_2x.png");
   }
 }
 .section-compare .image-icon-dynamic-island {
@@ -20695,14 +20719,14 @@ html.text-zoom .section-compare .compare-table {
   height: 38px;
   background-size: 38px 38px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_dynamic_island__cnj1i3qmtyly_large.png);
+  background-image: url("./../images/icon_dynamic_island__cnj1i3qmtyly_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-dynamic-island {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_dynamic_island__cnj1i3qmtyly_large_2x.png);
+    background-image: url("./../images/icon_dynamic_island__cnj1i3qmtyly_large_2x.png");
   }
 }
 .section-compare .image-icon-se-camera {
@@ -20710,14 +20734,14 @@ html.text-zoom .section-compare .compare-table {
   height: 36px;
   background-size: 36px 36px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_se_camera__5au2jxxymxui_large.png);
+  background-image: url("./../images/icon_se_camera__5au2jxxymxui_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-se-camera {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_se_camera__5au2jxxymxui_large_2x.png);
+    background-image: url("./../images/icon_se_camera__5au2jxxymxui_large_2x.png");
   }
 }
 .section-compare .image-icon-sos {
@@ -20725,14 +20749,14 @@ html.text-zoom .section-compare .compare-table {
   height: 39px;
   background-size: 39px 39px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_sos__etqtyej8htiu_large.png);
+  background-image: url("./../images/icon_sos__etqtyej8htiu_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-sos {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_sos__etqtyej8htiu_large_2x.png);
+    background-image: url("./../images/icon_sos__etqtyej8htiu_large_2x.png");
   }
 }
 .section-compare .image-icon-face-id {
@@ -20740,14 +20764,14 @@ html.text-zoom .section-compare .compare-table {
   height: 38px;
   background-size: 38px 38px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_face_id__c5la8bn2t1aq_large.png);
+  background-image: url("./../images/icon_face_id__c5la8bn2t1aq_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-face-id {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_face_id__c5la8bn2t1aq_large_2x.png);
+    background-image: url("./../images/icon_face_id__c5la8bn2t1aq_large_2x.png");
   }
 }
 .section-compare .image-icon-touch-id {
@@ -20755,14 +20779,14 @@ html.text-zoom .section-compare .compare-table {
   height: 38px;
   background-size: 39px 38px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/icon_touch_id__c2vs6nrxdnwy_large.png);
+  background-image: url("./../images/icon_touch_id__c2vs6nrxdnwy_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-icon-touch-id {
-    background-image: url(/v/iphone-14/c/images/overview/compare/icon_touch_id__c2vs6nrxdnwy_large_2x.png);
+    background-image: url("./../images/icon_touch_id__c2vs6nrxdnwy_large_2x.png");
   }
 }
 .section-compare .image-logo-iphone-13 {
@@ -20770,14 +20794,14 @@ html.text-zoom .section-compare .compare-table {
   height: 20px;
   background-size: 96px 20px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_13__b7xmgnxg4aaa_large.png);
+  background-image: url("./../images/logo_iphone_13__b7xmgnxg4aaa_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-logo-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_13__b7xmgnxg4aaa_large_2x.png);
+    background-image: url("./../images/logo_iphone_13__b7xmgnxg4aaa_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20786,14 +20810,14 @@ html.text-zoom .section-compare .compare-table {
     height: 20px;
     background-size: 97px 20px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_13__b7xmgnxg4aaa_medium.png);
+    background-image: url("./../images/logo_iphone_13__b7xmgnxg4aaa_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_13__b7xmgnxg4aaa_medium_2x.png);
+    background-image: url("./../images/logo_iphone_13__b7xmgnxg4aaa_medium_2x.png");
   }
 }
 .section-compare .image-logo-iphone-14 {
@@ -20801,14 +20825,14 @@ html.text-zoom .section-compare .compare-table {
   height: 20px;
   background-size: 98px 20px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_large.png);
+  background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-logo-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_large_2x.png);
+    background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20817,14 +20841,14 @@ html.text-zoom .section-compare .compare-table {
     height: 20px;
     background-size: 98px 20px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_medium.png);
+    background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_medium_2x.png);
+    background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20833,14 +20857,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 87px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_small.png);
+    background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14__dpv2g4gauh4y_small_2x.png);
+    background-image: url("./../images/logo_iphone_14__dpv2g4gauh4y_small_2x.png");
   }
 }
 .section-compare .image-logo-iphone-14-pro {
@@ -20848,14 +20872,14 @@ html.text-zoom .section-compare .compare-table {
   height: 20px;
   background-size: 137px 20px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_large.png);
+  background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-logo-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_large_2x.png);
+    background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20864,14 +20888,14 @@ html.text-zoom .section-compare .compare-table {
     height: 20px;
     background-size: 137px 20px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_medium.png);
+    background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_medium_2x.png);
+    background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20880,14 +20904,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 122px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_small.png);
+    background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_14_pro__clzshaapxh8i_small_2x.png);
+    background-image: url("./../images/logo_iphone_14_pro__clzshaapxh8i_small_2x.png");
   }
 }
 .section-compare .image-logo-iphone-se {
@@ -20895,14 +20919,14 @@ html.text-zoom .section-compare .compare-table {
   height: 20px;
   background-size: 98px 20px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_large.png);
+  background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-logo-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_large_2x.png);
+    background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20911,14 +20935,14 @@ html.text-zoom .section-compare .compare-table {
     height: 20px;
     background-size: 98px 20px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_medium.png);
+    background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_medium_2x.png);
+    background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20927,14 +20951,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 86px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_small.png);
+    background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-logo-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/logo_iphone_se__fv59ugxm8yum_small_2x.png);
+    background-image: url("./../images/logo_iphone_se__fv59ugxm8yum_small_2x.png");
   }
 }
 .section-compare .image-swatch-iphone-13 {
@@ -20942,14 +20966,14 @@ html.text-zoom .section-compare .compare-table {
   height: 14px;
   background-size: 104px 14px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_large.png);
+  background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-swatch-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_large_2x.png);
+    background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -20958,14 +20982,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 137px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_medium.png);
+    background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_medium_2x.png);
+    background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -20974,14 +20998,14 @@ html.text-zoom .section-compare .compare-table {
     height: 46px;
     background-size: 92px 46px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_small.png);
+    background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-13 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_13__eiqv8onfqb42_small_2x.png);
+    background-image: url("./../images/swatch_iphone_13__eiqv8onfqb42_small_2x.png");
   }
 }
 .section-compare .image-swatch-iphone-14 {
@@ -20989,14 +21013,14 @@ html.text-zoom .section-compare .compare-table {
   height: 14px;
   background-size: 86px 14px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_large.png);
+  background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-swatch-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_large_2x.png);
+    background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -21005,14 +21029,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 114px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_medium.png);
+    background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_medium_2x.png);
+    background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -21021,14 +21045,14 @@ html.text-zoom .section-compare .compare-table {
     height: 19px;
     background-size: 114px 19px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_small.png);
+    background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-14 {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14__bveu4x6q4egi_small_2x.png);
+    background-image: url("./../images/swatch_iphone_14__bveu4x6q4egi_small_2x.png");
   }
 }
 .section-compare .image-swatch-iphone-14-pro {
@@ -21036,14 +21060,14 @@ html.text-zoom .section-compare .compare-table {
   height: 14px;
   background-size: 68px 14px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_large.png);
+  background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-swatch-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_large_2x.png);
+    background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -21052,14 +21076,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 92px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_medium.png);
+    background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_medium_2x.png);
+    background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -21068,14 +21092,14 @@ html.text-zoom .section-compare .compare-table {
     height: 19px;
     background-size: 93px 19px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_small.png);
+    background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-14-pro {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_14_pro__cf5r1gxjozyq_small_2x.png);
+    background-image: url("./../images/swatch_iphone_14_pro__cf5r1gxjozyq_small_2x.png");
   }
 }
 .section-compare .image-swatch-iphone-se {
@@ -21083,14 +21107,14 @@ html.text-zoom .section-compare .compare-table {
   height: 14px;
   background-size: 50px 14px;
   background-repeat: no-repeat;
-  background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_large.png);
+  background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_large.png");
 }
 @media (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi),
   only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
   .section-compare .image-swatch-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_large_2x.png);
+    background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_large_2x.png");
   }
 }
 @media only screen and (max-width: 1068px) {
@@ -21099,14 +21123,14 @@ html.text-zoom .section-compare .compare-table {
     height: 18px;
     background-size: 66px 18px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_medium.png);
+    background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_medium.png");
   }
 }
 @media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_medium_2x.png);
+    background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_medium_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
@@ -21115,14 +21139,14 @@ html.text-zoom .section-compare .compare-table {
     height: 19px;
     background-size: 68px 19px;
     background-repeat: no-repeat;
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_small.png);
+    background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_small.png");
   }
 }
 @media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
   only screen and (max-width: 734px) and (min-resolution: 144dpi) {
   .section-compare .image-swatch-iphone-se {
-    background-image: url(/v/iphone-14/c/images/overview/compare/swatch_iphone_se__7akw23wxbv6e_small_2x.png);
+    background-image: url("./../images/swatch_iphone_se__7akw23wxbv6e_small_2x.png");
   }
 }
 @media only screen and (max-width: 734px) {
