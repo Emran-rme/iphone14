@@ -11495,6 +11495,7 @@ html.enhance-safety .safety-sos-section .hero-group .media-position-container {
 html.enhance-safety .safety-sos-section .hero-group .media-container {
   transform: translateY(calc(var(--safety-intro-internal-offset) * 1px));
   transform-origin: center 20px;
+  transition: transform .23s;
 }
 html.enhance-safety .safety-sos-section .hero-group .borders {
   position: absolute;
@@ -11522,12 +11523,14 @@ html.enhance-safety .safety-sos-section .hero-group .borders .border {
         var(--safety-intro-border-progress)
     )
   );
+  transition: transform 0.2s;
 }
 html.enhance-safety .safety-sos-section .hero-group .borders .border.end {
   justify-self: end;
   transform: translateX(
     calc(var(--safety-intro-border-width) * var(--safety-intro-border-progress))
   );
+  transition: transform 0.2s;
 }
 html.enhance-safety .safety-sos-section .subheadline-group {
   margin-bottom: auto;
