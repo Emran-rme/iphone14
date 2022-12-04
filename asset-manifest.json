@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iphone14/static/css/main.9cddb54c.css",
-    "main.js": "/iphone14/static/js/main.549b8a20.js",
+    "main.js": "/iphone14/static/js/main.186f4fb8.js",
     "static/js/997.02dacb9a.chunk.js": "/iphone14/static/js/997.02dacb9a.chunk.js",
     "static/js/787.9fa7e38c.chunk.js": "/iphone14/static/js/787.9fa7e38c.chunk.js",
     "static/media/large.mp4": "/iphone14/static/media/large.9de617ab5da6d948fcbf.mp4",
@@ -344,12 +344,12 @@
     "static/media/bag.svg": "/iphone14/static/media/bag.41f41d59c15e30fc042ccb9a378a3e5e.svg",
     "static/media/signIn.svg": "/iphone14/static/media/signIn.919ab983f3b59bd15738d7d4b46f3350.svg",
     "main.9cddb54c.css.map": "/iphone14/static/css/main.9cddb54c.css.map",
-    "main.549b8a20.js.map": "/iphone14/static/js/main.549b8a20.js.map",
+    "main.186f4fb8.js.map": "/iphone14/static/js/main.186f4fb8.js.map",
     "997.02dacb9a.chunk.js.map": "/iphone14/static/js/997.02dacb9a.chunk.js.map",
     "787.9fa7e38c.chunk.js.map": "/iphone14/static/js/787.9fa7e38c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cddb54c.css",
-    "static/js/main.549b8a20.js"
+    "static/js/main.186f4fb8.js"
   ]
 }
