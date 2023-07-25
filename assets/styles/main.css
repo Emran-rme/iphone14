@@ -1352,9 +1352,9 @@ html.enhance-hero
 .first_section .hardware-fan-first-section .headline {
   display: none;
 }
-.first_section .hardware-fan-first-section .subheadline {
+/* .first_section .hardware-fan-first-section .subheadline {
   margin-top: 0;
-}
+} */
 .first_section .hardware-fan-first-section .availability {
   color: #6e6e73;
 }
@@ -10197,6 +10197,7 @@ html.enhance-deep-dive
     --p-width: 274px;
     --p-height: 555px;
   }
+
 }
 .safety-crash-detection .startframe .column-copy {
   order: 2;
@@ -19844,6 +19845,9 @@ html.ar-quicklook .section-ar .ar-quicklook-gallery-image-purple {
   .section-guided-tour .full-width-tile-wrapper {
     padding: 0;
   }
+  html.enhance-hero .first_section .hero-display-section .iphone-14-phone-container, html.enhance-hero .first_section .hero-display-section .iphone-14-plus-phone-container {
+    transform: translateX(-155px);
+}
 }
 .section-guided-tour .tile-guided-tour {
   display: flex;
