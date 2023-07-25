@@ -1,6 +1,12 @@
+import { useRef } from "react";
+import { useIsInViewport } from "../../../helpers/helpers";
 import styles from "./Sections.module.css";
 
 const SixthSection = () => {
+  const textRef = useRef();
+  const isVisible = useIsInViewport(textRef);
+  const textRef2 = useRef();
+  const isVisible2 = useIsInViewport(textRef2);
   return (
     <section className="section section-display overflow-hidden">
       <div className="section-background">
@@ -85,11 +91,13 @@ const SixthSection = () => {
         </div>
       </div>
       <div className="section-content section-copy">
-        <div className="flex flex-wrap flex-row w-full">
+        <div className="flex flex-wrap flex-row w-full" ref={textRef}>
           <div
             data-parallax=""
-            className={`column column-oled ${styles.large3} medium-10`}
-            style={{ transform: "translateY(0px)", opacity: 1 }}
+            className="column column-oled  basis-full max-w-full md:basis-1/3 md:max-w-[33.3333333%]"
+            style={
+              isVisible ? { transform: "translateY(0px)", opacity: 1 } : {}
+            }
           >
             <p className="typography-site-body">
               <strong>OLED&nbsp;technology</strong> delivers incredible contrast
@@ -98,8 +106,10 @@ const SixthSection = () => {
           </div>
           <div
             data-parallax
-            className={`column column-resolution ${styles.large3} ${styles.largeOffset1} medium-10 medium-offset-0`}
-            style={{ transform: "translateY(0px)", opacity: 1 }}
+            className="column column-resolution basis-full max-w-full md:basis-1/3 md:max-w-[33.3333333%]"
+            style={
+              isVisible ? { transform: "translateY(0px)", opacity: 1 } : {}
+            }
           >
             <p className="typography-site-body">
               <strong>High resolution and color accuracy</strong> make
@@ -108,8 +118,10 @@ const SixthSection = () => {
           </div>
           <div
             data-parallax
-            className={`column column-color ${styles.large3} ${styles.largeOffset1} medium-10 medium-offset-0`}
-            style={{ transform: "translateY(0px)", opacity: 1 }}
+            className="column column-color basis-full max-w-full md:basis-1/3 md:max-w-[33.3333333%]"
+            style={
+              isVisible ? { transform: "translateY(0px)", opacity: 1 } : {}
+            }
           >
             <p className="typography-site-body">
               <strong>True&nbsp;Tone</strong> makes your display easier on the
@@ -120,8 +132,12 @@ const SixthSection = () => {
         </div>
         <div className="flex flex-wrap flex-row w-full">
           <div
-            className={`column ${styles.large7} medium-10`}
-            style={{ transform: "translateY(0px)", opacity: 1 }}
+            ref={textRef2}
+            className="column basis-full max-w-full mt-8 md:basis-[58.3333333333%] md:max-w-[58.3333333333%]"
+            data-parallax
+            style={
+              isVisible2 ? { transform: "translateY(0px)", opacity: 1 } : {}
+            }
           >
             <picture
               id="overview-display-xdr-display-icon-1"

@@ -1,8 +1,15 @@
-import styles from "./Sections.module.css";
+import { useRef } from "react";
+import { useIsInViewport } from "../../../helpers/helpers";
 
 const SeventhSection = () => {
+  const textRef = useRef();
+  const textRef1 = useRef();
+  const textRef2 = useRef();
+  const isVisible = useIsInViewport(textRef);
+  const isVisible1 = useIsInViewport(textRef1);
+  const isVisible2 = useIsInViewport(textRef2);
   return (
-    <section className="section section-camera">
+    <section className="block section-camera">
       <div className="camera-campacked-wrap parallax-anchor">
         <div
           className="parallax-container"
@@ -10,7 +17,7 @@ const SeventhSection = () => {
         >
           <div className="section-content">
             <h2 className="headline visuallyhidden">Camera</h2>
-            <p className="camera-headline typography-site-headline-super headline-alignment">
+            <p className="camera-headline typography-site-headline-super headline-alignment mt-5">
               Cam-<strong>packed.</strong>
             </p>
           </div>
@@ -138,9 +145,7 @@ const SeventhSection = () => {
           </span>
         </p>
         <div className="main-group-picture-wrap">
-          <div
-            className={`picture-wrap ${styles.large6} small-12 medium-up-crop-left`}
-          >
+          <div className="picture-wrap basis-full max-w-full md:basis-3/6 md:max-w-[50%] medium-up-crop-left">
             <picture
               id="overview-camera-gallery-camera-main-1"
               className="overview-camera-gallery-camera-main picture loaded"
@@ -172,7 +177,7 @@ const SeventhSection = () => {
               />
             </picture>
           </div>
-          <div className={`picture-wrap ${styles.large6} small-12 `}>
+          <div className="picture-wrap basis-full max-w-full md:basis-3/6 md:max-w-[50%]">
             <picture
               id="overview-camera-gallery-camera-low-light-1"
               className="overview-camera-gallery-camera-low-light picture loaded"
@@ -208,20 +213,25 @@ const SeventhSection = () => {
         <div className="content-description">
           <p
             data-parallax=""
-            className={`content-title typography-site-body ${styles.large6} medium-10 small-12`}
-            style={{ transform: "translateY(0px)", opacity: 1 }}
+            className="content-title typography-site-body  basis-full max-w-full md:basis-3/6 md:max-w-[50%]"
+            style={
+              isVisible ? { transform: "translateY(0px)", opacity: 1 } : {}
+            }
           >
             A new Main camera and improved image processing let you capture even
             more sensational shots in all kinds of light — especially
             low&nbsp;light.
           </p>
           <div
-            className={`content-stats stats-wrap ${styles.large3} medium-6 small-12`}
+            ref={textRef}
+            className="content-stats stats-wrap content-title typography-site-body  basis-full max-w-full md:basis-3/6 md:max-w-[50%]"
           >
             <div
               data-parallax='{"type":"secondLarge"}'
               className="stat-wrapper"
-              style={{ transform: "translateY(0px)", opacity: 1 }}
+              style={
+                isVisible1 ? { transform: "translateY(0px)", opacity: 1 } : {}
+              }
             >
               <figure className="stat">
                 <div className="stat-content stat-custom">
@@ -236,12 +246,15 @@ const SeventhSection = () => {
           </div>
 
           <div
-            className={`content-stats stats-wrap stats-wrap-ultra ${styles.large3} medium-6 small-12`}
+            ref={textRef1}
+            className="content-stats stats-wrap stats-wrap-ultra content-title typography-site-body  basis-full max-w-full md:basis-3/6 md:max-w-[50%]"
           >
             <div
               data-parallax='{"type":"camStatTwo"}'
               className="stat-wrapper"
-              style={{ transform: "translateY(0px)", opacity: 1 }}
+              style={
+                isVisible2 ? { transform: "translateY(0px)", opacity: 1 } : {}
+              }
             >
               <figure className="stat">
                 <div className="stat-content stat-custom">
@@ -249,7 +262,9 @@ const SeventhSection = () => {
                   <span className="stat-value">
                     2x better low‑light&nbsp;photos
                   </span>
-                  <span className="stat-caption">on the Ultra Wide camera</span>
+                  <span className="stat-caption" ref={textRef2}>
+                    on the Ultra Wide camera
+                  </span>
                 </div>
               </figure>
             </div>

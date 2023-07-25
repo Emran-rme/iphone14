@@ -35,7 +35,84 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full min-w-[1024px] max-h-[44px] block absolute top-0 right-0 left-0 px-2 sm:px-24 h-12 bg-[rgba(0,0,0,.8)] z-[9999]">
+      <nav
+        id="mobile_nav"
+        className="min-w-[320px] bg-[rgba(0,0,0,.98)] absolute top-0 right-0 left-0 block md:hidden z-[9999] w-full h-[48px] text-lg"
+      >
+        <div className="absolute top-0 w-full h-full ">
+          <ul className="block absolute z-[5] top-0 left-0 w-full h-[48px] overflow-hidden">
+            <li className="header-menuicon box-border inline-block align-top h-[48px]">
+              <Link
+                to="#ac-gn-menustate"
+                className="ac-gn-menuanchor ac-gn-menuanchor-open"
+                id="ac-gn-menuanchor-open"
+              >
+                <span className="ac-gn-menuanchor-label">
+                  Global Nav Open Menu
+                </span>
+              </Link>
+              <Link
+                to="#"
+                role="button"
+                className="ac-gn-menuanchor ac-gn-menuanchor-close"
+                id="ac-gn-menuanchor-close"
+              >
+                <span className="ac-gn-menuanchor-label">
+                  Global Nav Close Menu
+                </span>
+              </Link>
+              <label className="ac-gn-menuicon-label" htmlFor="ac-gn-menustate">
+                <span className="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+                  <span className="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+                </span>
+                <span className="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+                  <span className="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+                </span>
+              </label>
+            </li>
+            <li className="block h-[48px] ac-gn-apple">
+              <Link
+                className="ac-gn-link ac-gn-link-apple"
+                to="/"
+                id="ac-gn-firstfocus-small"
+              >
+                <span className="ac-gn-link-text">Apple</span>
+              </Link>
+            </li>
+            <li className="h-[48px] w-auto absolute top-0  z-[2] ac-gn-bag-small">
+              <div className="ac-gn-bag-wrapper">
+                <Link
+                  className="ac-gn-link ac-gn-link-bag h-[48px]"
+                  to="/"
+                  onClick={(e) => handleChangeDropDown(e)}
+                >
+                  <span className="ac-gn-link-text">Shopping Bag</span>
+                </Link>
+                <span className="ac-gn-bag-badge">
+                  <span className="ac-gn-bag-badge-separator"></span>
+                  <span className="ac-gn-bag-badge-number"></span>
+                  <span className="ac-gn-bag-badge-unit">+</span>
+                </span>
+              </div>
+              <span className="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {dropDownStatus ? (
+        <div className=" md:hidden">
+          <span className={styles.dropDownArrow} />
+          <div
+            className="absolute z-[21] right-0 top-12 p-4 w-full  bg-white border border-[#d2d2d7]"
+            role="menu"
+          >
+            <Suspense fallback={<Spinner />}>
+              <DropDownMenu />
+            </Suspense>
+          </div>
+        </div>
+      ) : null}
+      <nav className="hidden w-full min-w-[1024px] max-h-[44px] md:block absolute top-0 right-0 left-0 px-2 sm:px-24 h-12 bg-[rgba(0,0,0,.8)] z-[9999]">
         <div className="mx-auto mt-0 max-w-[980px] relative z-[2] pt-0 px-6 flex items-center h-full">
           <ul className="mt-0 -mx-2 w-full h-11 flex justify-between list-none">
             <li
@@ -296,12 +373,7 @@ const Navbar = () => {
               ) : null}
             </li>
           </ul>
-          {dropDownStatus && (
-            <div
-              className="w-full fixed right-0 left-0 top-0 h-screen z-20"
-              onClick={() => setDropDownStatus(false)}
-            ></div>
-          )}
+
           <aside className={seacrhStatus ? "block" : "hidden"}>
             <div className={styles.searchBox}>
               <div>
@@ -394,6 +466,12 @@ const Navbar = () => {
           </aside>
         </div>
       </nav>
+      {dropDownStatus && (
+        <div
+          className="w-full fixed right-0 left-0 top-0 h-screen z-20 bg-[rgba(0,0,0,.48)] md:bg-transparent "
+          onClick={() => setDropDownStatus(false)}
+        ></div>
+      )}
       <div
         onClick={() => setSearchStatus(false)}
         className={`fixed top-0 right-0 bottom-0 left-0 w-full h-full z-[9998] bg-[rgba(0,0,0,.48)] ${
