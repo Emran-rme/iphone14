@@ -13,7 +13,7 @@ const SubNavbar = () => {
 
   return (
     <nav
-      className={`top-0 left-0 w-full h-[52px] min-w-[1024px] z-[9997] sticky ${
+      className={`top-0 left-0 w-full h-[52px] min-w-[1024px] z-[9997] sticky hidden md:block ${
         offset > 44 ? styles.activeSticky : " "
       }`}
     >

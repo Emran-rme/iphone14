@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useIsInViewport } from "../../../helpers/helpers";
 import styles from "./Sections.module.css";
 
 const FifthSection = () => {
@@ -10,43 +11,42 @@ const FifthSection = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
+  const battryRef = useRef();
+  const isVisible = useIsInViewport(battryRef);
+  const battryRef2 = useRef();
+  const isVisible2 = useIsInViewport(battryRef2);
   return (
     <section className="section section-battery pt-[84px] pb-[66px] w-full overflow-hidden">
       <div className="section-content">
         <h2 className="visuallyhidden">Battery</h2>
         <div className="visuallyhidden">A huge Plus for battery life.</div>
         <div className="flex flex-row flex-wrap w-full">
-          <div
-            className={`column column-first ${styles.large10} ${styles.largeOffset1} large-center small-offset-0`}
-          >
+          <div className={`column column-first ml-0 `}>
             <span className="start typography-site-headline-super">
               A huge{" "}
             </span>
           </div>
           <div
-            className={`column column-second ${styles.large10} ${styles.largeOffset1} large-center medium-offset-2 small-offset-0`}
+            ref={battryRef}
+            className={`column column-second ${styles.large10} large-center medium-offset-2 small-offset-0`}
           >
             <span
               className="plus"
-              style={
-                offset > 9400 && offset <= 10500
-                  ? { "--wipe": "0%" }
-                  : { "--wipe": "100%" }
-              }
+              style={isVisible ? { "--wipe": "0%" } : { "--wipe": "100%" }}
             >
               Plus{" "}
             </span>
           </div>
           <div
-            className={`column column-third ${styles.large8} ${styles.largeOffset4} large-center small-11 small-offset-1`}
+            ref={battryRef2}
+            className={`column column-third basis-[91.6666666667%] max-w-[91.6666666667%] ml-[8.3333333333%] md:basis-[66.6666666667%] md:max-w-[66.6666666667%] md:ml-[33.3333333333%]  large-center `}
           >
             <span className="end typography-site-headline-super">
               for
               <div
                 className="battery "
                 style={
-                  offset > 9500 && offset <= 10500
+                  isVisible2
                     ? { transform: " matrix(1, 0, 0, 1, 0, 0)" }
                     : { transform: " matrix(0, 0, 0, 1, 0, 0)" }
                 }
@@ -120,16 +120,16 @@ const FifthSection = () => {
         <p
           data-parallax=""
           style={{ opacity: 0.5 }}
-          className={`copy typography-site-headline-reduced large-centered ${styles.large7} medium-8 small-uncentered small-12`}
+          className="column basis-full max-w-full md:basis-[70%] md:max-w-[70%] typography-site-headline-reduced large-centered"
         >
           Get our best battery life ever on iPhone&nbsp;14&nbsp;Plus.{" "}
           <br className="large-hide small-show" />
           And awesome all-day battery life on iPhone&nbsp;14.
         </p>
-        <div className="row-stats flex flex-wrap flex-row w-full">
+        <div className="row-stats flex flex-wrap flex-row w-full ">
           <div
             data-parallax=""
-            className={`column ${styles.large2} ${styles.largeOffset2} medium-3 medium-offset-1 small-12 small-offset-0`}
+            className="column basis-full max-w-full md:basis-4/12 md:max-w-[33.3333333%] flex justify-center"
             style={{ transform: "translateY(0px)", opacity: 1 }}
           >
             <figure className="stat">
@@ -157,7 +157,7 @@ const FifthSection = () => {
           </div>
           <div
             data-parallax=""
-            className={`column ${styles.large2} ${styles.largeOffset2} medium-3 medium-offset-1 small-12 small-offset-0`}
+            className="column basis-full max-w-full md:basis-4/12 md:max-w-[33.3333333%] flex justify-center"
             style={{ transform: "translateY(0px)", opacity: 1 }}
           >
             <figure className="stat">
@@ -185,7 +185,7 @@ const FifthSection = () => {
           </div>
           <div
             data-parallax=""
-            className={`column ${styles.large2} ${styles.largeOffset2} medium-3 medium-offset-1 small-12 small-offset-0`}
+            className="column basis-full max-w-full md:basis-4/12 md:max-w-[33.3333333%] flex justify-center"
             style={{ transform: "translateY(0px)", opacity: 1 }}
           >
             <figure className="stat">
